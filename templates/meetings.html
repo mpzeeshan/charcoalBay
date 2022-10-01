@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<h3>Meetings</h3>
+ <div class="meeting-card">
+    <div class="meeting-center" >
+      
+      <a style="text-decoration:none; color:black"href='{{ url_for('omeetings') }}'><h4 class="online">ONLINE</h4></a>
+    </div> 
+ </div>
+ <br>
+ <div class="meeting-card">
+   <div class="meeting-center">
+      <a style="text-decoration:none; color:black"href='{{ url_for('fmeetings') }}'><h4 class="online">OFFLINE</h4></a>
+   </div> 
+</div>
+
+ 
+ 
+
+{% endblock %}

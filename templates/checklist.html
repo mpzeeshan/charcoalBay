@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<br>
+<br>
+<br>
+<br>
+<h3>Cleaning Checklist</h3>
+
+  <script>
+
+
+  </script> 
+
+  <form>
+  
+    {% for i in range(checklist|length) %}
+    <div class="card" id="check{{ i+1 }}">
+      <input type="checkbox" id="c{{ i+1 }}" name="fruit-1" value="c{{ i+1 }}" onclick="myfun('c{{ i+1 }}','check{{ i+1 }}')">
+      <label for="c{{ i+1 }}" class="checklist-label" ><strong>{{ checklist[i]  }}</strong></label>
+    </div>
+    <div style="height: 3px;" ></div>
+    {% endfor %}    
+  <br>
+  <br>
+  <center>
+  <button class="button button5 "> Submit Checklist </button>
+  </center>
+
+  </form>
+
+  
+{% endblock %}

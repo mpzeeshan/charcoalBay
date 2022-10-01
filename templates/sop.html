@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<h3>SOP</h3>
+{% for i in range(sop_list|length) %}
+    <div class="sop">
+        <div class="sop-round sop-round-desk">
+            <h2 class="sop-count">{{ i+1 }}</h2>
+        </div>
+        <div class="sop-textdiv" >
+           
+        <p class="sop-text sop-text-desk">{{ sop_list[i] }}</p>
+         
+        </div>
+    </div>
+    <div class="sop-arrow">
+        
+        <i class='fas fa-angle-down' style='font-size:110%'></i>
+        <!-- <i class='fas fa-arrow-down' style='font-size:24px'></i> -->
+    </div>
+    
+   
+ {% endfor %}
+
+{% endblock %}
