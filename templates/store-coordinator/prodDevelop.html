@@ -1,0 +1,20 @@
+{% extends 'base-coordinator.html' %}
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<h3>Product Development</h3>
+<h4>Write down your Ideas!<h4>
+    <form style="text-align: center; " action='{{ url_for('submitPD',  user = user, name = login_name, outlet = outlet, role = login_category ) }}' method="POST">
+        <textarea placeholder="Write here..." name="pd">
+            </textarea>
+     <br>
+     <br>
+        <button class="button button5">Submit </button>
+    </form>
+
+
+{% endblock %}

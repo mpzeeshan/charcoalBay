@@ -1,0 +1,70 @@
+{% extends 'base-coordinator.html' %}
+
+
+
+{% block content %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="new-meetings">
+    <br>
+    <br>
+    <h5 class="meeting-details">ASSIGN MEETING</h5>
+    <br>
+    <center>
+    <form method="POST" action='{{ url_for('newmeeting') }}'> 
+        
+      
+        
+          <!-- <label for="uname"><b>Username</b></label> -->
+          <input type="text" placeholder="Enter Meeting Agenda" name="magenda" required>
+          <br>
+          <!-- <label for="psw"><b>Password</b></label> -->
+          <input type="text" placeholder="Meeting Host" name="mhost" required>
+          <br>
+          <input type="text" placeholder="Time" name="mtime" required>
+          
+          <br>
+          <input type="text" placeholder="Meeting Link" name="mlink" required>
+           
+          <br>
+          <br>
+          <label for="audience" style="color: white; font-size:100%; ">Select Audience</label>
+           <br>
+           
+          <select name='audience' id='audience' style="height: 60px; width:120px; border: none; color:grey" multiple>
+            <option value="Manager">Manager</option>
+            <option value="Quality Assurer">Quality Assurer</option>
+            <option value="Production Staff">Production staff</option>
+            <option value="Counter top">Counter top</option>
+            <option value="Call center">Call Center</option>
+            <option value="Customer Care">Customer Care</option>
+          </select>
+          <!-- <button type="submit" >Login</button> -->
+          <br>
+          <br>
+          <input type="date" style="color:gray; border: none;" placeholder="Date" name="mDate" required>
+            <br>
+            <br>
+            
+            <button class="button-task button5">Submit</button>
+           
+        
+        
+      </form>
+    </center>
+    <!-- <div>NOTE: To select multiple audience hold ctrl or shift</div> -->
+</div>
+
+<div style="height:20px;"> 
+</div>
+
+
+
+
+
+{% endblock %}

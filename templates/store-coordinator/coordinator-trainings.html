@@ -1,0 +1,33 @@
+{% extends 'base-coordinator.html' %}
+
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="co-meetings">
+    <br>
+    <br>
+ <center>   
+   <a style="text-decoration:none; color:#FFC300"href='{{ url_for('addtrainings') }}'><div class="meeting-caradd">
+      <h4 class="center-text">ONLINE</h4>
+    
+ </div></a>
+ <br>
+ <br>
+ <div class="meeting-caradd">
+    <div class="meeting-center">
+       <a style="text-decoration:none; color:#FFC300"href='{{ url_for('addtrainings') }}'><h4 class="online">OFFLINE</h4></a>
+    </div> 
+ </div>
+</center>
+
+ </div>
+
+
+
+{% endblock %}

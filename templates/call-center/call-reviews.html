@@ -1,0 +1,20 @@
+{% extends 'base-callcenter.html' %}
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<h3>Review</h3>
+<br>
+
+
+
+<h4 style="font-size: 1em; font-weight:lighter;  padding-left:20px"> Write down,What is Expected!</h4>
+ <form style="text-align: center; " action='{{ url_for('submitcallReview',  user = user, name = login_name, outlet = outlet, role = login_category ) }}' method="POST">
+  <textarea placeholder="Write here..." rows="10" cols="40" height="200px" name="review"></textarea>
+  <br><br>
+  <button class="button button5">Submit </button>
+ </form>
+{% endblock %}

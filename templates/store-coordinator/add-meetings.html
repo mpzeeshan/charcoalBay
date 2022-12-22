@@ -1,0 +1,38 @@
+{% extends 'base-coordinator.html' %}
+
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="add-co-meetings">
+         <div class="meeting-div">
+       <a href='{{ url_for('newmeeting') }}' style="text-decoration:none; "> <div class="add-meetings">         
+               
+             <h4 class="center-text"><b>  ADD </b></h4>
+               
+         </div> </a>
+        
+         {% for i in range(m_id|length) %}
+         <a href='{{ url_for('meetingContent', m_id=m_id[i] ) }}' style="text-decoration:none; "><div class="add-meetings">         
+               <h4 class="center-text"><b> {{ m_name[i] }}</b></h4>
+             </div></a>
+         {% endfor %} 
+            
+               
+               
+                
+                    
+                 </div>     
+                         
+</div>
+<div style="height:20px;"> 
+</div>
+
+
+
+{% endblock %}

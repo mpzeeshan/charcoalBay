@@ -1,0 +1,64 @@
+{% extends 'base-coordinator.html' %}
+
+
+
+{% block content %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="new-meetings">
+    <br>
+    <br>
+    <h5 class="meeting-details">ASSIGN TRAINING</h5>
+    <br>
+    <center>
+    <form method="POST" action='{{ url_for('newtraining', mode="0" ) }}'> 
+        
+      
+        
+          <!-- <label for="uname"><b>Username</b></label> -->
+          <input type="text" placeholder="Training Name" name="tname" required>
+          <br>
+          <!-- <label for="psw"><b>Password</b></label> -->
+          <input type="text" placeholder="Trainer" name="trainer" required>
+          <br>
+          <input type="text" placeholder="Time" name="ttime" required>
+          <br>
+          <!-- <input type="date" placeholder="Date" name="tDate" required>
+          <br> -->
+          <input type="text" placeholder="Venue" name="tVenue" required>
+           <br>
+          <!-- <button type="submit" >Login</button> -->
+           
+          <select name='audience' id='audience' style="height: 60px; width:120px; border: none; color:grey" multiple>
+            <option value="Manager">Manager</option>
+            <option value="Quality Assurer">Quality Assurer</option>
+            <option value="Production Staff">Production staff</option>
+            <option value="Counter top">Counter top</option>
+            <option value="Call center">Call Center</option>
+            <option value="Customer Care">Customer Care</option>
+          </select>
+          <!-- <button type="submit" >Login</button> -->
+          <br>
+          <br>
+          <input type="date" style="color:gray; border: none;" placeholder="Date" name="tDate" required>
+            <br>
+            <br>
+            
+            
+            <button class="button-task button5">Submit</button>
+           
+        
+        
+      </form>
+    </center>
+</div>
+
+<div style="height:20px;"> 
+</div>
+
+{% endblock %}

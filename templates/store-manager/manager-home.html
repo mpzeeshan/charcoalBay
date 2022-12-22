@@ -1,0 +1,47 @@
+{% extends 'base-manager.html' %}
+
+
+{% block content %}
+
+<div class="home">
+    <center>
+        <br>
+        <h4> Hello! <br><b>{{ login_name }}</b></h4>
+        <img  class="img" src="https://nuvomagazine.scdn2.secure.raxcdn.com/wp-content/uploads/2013/08/16-03-NUVO-Magazine-Autumn-2013-chef%E2%80%99s_table_page_1_image_0001.jpg" >
+        <br>
+        <br>
+        <h4>THE DAY'S TOP EMPLOYEE</h4>
+        <h5> Ms.FARATH - Branch B</h5>
+        <h5> Edappal Kerala </h5>
+        <br>
+        <button class="button button5"> <i class='fas fa-lightbulb' style='font-size:17px; color:white;'></i>  Enter Bright Ideas </button>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button class="button button5" style="box-shadow: 5px 10px;">  THE DAY'S TOP EMPLOYEE </button>
+            <br>
+            <br>
+            <form method="POST" action='#'> 
+                
+              
+                
+                  <!-- <label for="uname"><b>Username</b></label> -->
+                  <input type="text" placeholder="NAME" name="rname" required>
+                  <br>
+                  <!-- <label for="psw"><b>Password</b></label> -->
+                  <input type="text" placeholder="EMPLOYEE ID" name="reid" required>
+                  <br>
+                  <input type="text" placeholder="DEPARTMENT" name="mtime" required>
+                  
+                  <br>
+                  <input type="text" placeholder="Rating out of 5" name="rrating" required><br>
+                  <button class="button-task button5">Submit</button>
+            </form>   
+            
+    </center>
+    </div>
+
+{% endblock %}

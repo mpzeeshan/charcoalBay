@@ -1,0 +1,947 @@
+@media (min-width: 800px) {
+  .task{
+    
+    padding-left: 43vw;
+    padding-bottom: 10px ;
+    color: #FFC300;
+    font-size: 130%;
+    font-weight: bold;
+  }
+  .tasks-card{
+    
+    width: 50%;
+    height: 90px;
+      /* border-left: 4px solid #000000; */
+      /* border: 1px solid #333; */
+    border-top: 0.5px outset lightgrey;
+    border-right: 0.5px solid lightgrey ;
+      box-shadow: 0px 3px 6px -3px #000000;
+      border-radius: 2%;
+      
+      margin: 0 auto 0 auto;
+      background-color:  #FFC300;
+    }
+
+    .tasks-headline{
+        color: white;
+        
+        float: left;
+        padding-left: 2%;
+        padding-top: 1%;
+        padding-right: 10%;
+        padding-bottom: 1%;
+        
+        font-weight: bold;
+        font-size: 110%;
+      }
+      .tasks-name{
+        color:white;
+        float: right;
+        padding-left: 60%;
+        padding-right:2%;
+        display: block;
+        font-size: 90%;
+        font-weight: bold;
+      }
+      .tasks-time{
+         color: white;
+          float: right;
+          padding-left: 70%;
+          padding-right: 2%;
+          padding-top:2%;
+          display: block;
+          font-size: 90%;
+          font-weight: bold;
+      }
+      .single-task{
+        width: 60vw;
+      height: 70vh;
+      /* border-left: 4px solid #000000; */
+      /* border: 1px solid #333; */
+      border-top: 0.5px outset lightgrey;
+      border-right: 0.5px solid lightgrey ;
+      box-shadow: 0px 3px 6px -3px #000000;
+      border-radius: 2%;
+      display: block;
+      margin: 0 auto 0 auto;
+      background-color:  #FFC300;
+      
+      }
+      .button-task {
+      margin-left: 40%;
+        background-color: white; 
+        border: none;
+        color: #FFC300;
+        padding: 1.7%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0px 0px;
+        cursor: pointer;
+      }
+      .button6 {border-radius: 1%;
+      }
+      .task-icons{
+        justify-content: center;
+      }
+      .single-time{
+        
+        padding-left: 50vw;
+        padding-top:3%;
+        padding-right: 3%;
+        padding-bottom:2%;
+        color:white;
+        font-size: 100%;
+        font-weight: bold;
+      }
+      .task-title{
+       display: block;
+       padding-left: 2%;
+       padding-top: 2%;
+       padding-bottom: 4%;
+       color: white;
+       font-size: 110%;
+       font-weight: bold;
+      }
+      .taskk-name{
+        
+        padding-left: 45vw;
+        padding-top:5%;
+        padding-right: 3%;
+        display:block;
+        color:white;
+        font-size: 100%;
+        font-weight: bold;
+      }
+      .task-content{
+       color: white;
+       display: block;
+       padding-left: 2%;
+       padding-right: 2%;   
+       font-size: 100%;
+        
+      }
+      .task-icons{
+        
+        text-align: center;
+      }
+      .space-div{
+        padding-top: 10vh;
+        display: block;
+        /* position: absolute; 
+        bottom: 0; */
+      }
+      .but-div{
+        padding-top: 0.6%;
+        text-align: center;
+      }
+      .new-meetings{
+        width: 50vw;
+        height: 85vh;
+     /* border-left: 4px solid #000000; */
+     /* border: 1px solid #333; */
+        border-top: 0.5px outset lightgrey;
+        border-right: 0.5px solid lightgrey ;
+        box-shadow: 0px 3px 6px -3px #000000;
+        border-radius: 2%;
+        margin: 0 auto 0 auto;
+        background-color:  #FFC300;
+     
+      }
+      .meeting-content{
+        float: center;
+        padding-left: 20px;
+        font-size: 100%;
+      }
+      .meeting-details{
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 120%;
+        text-decoration: underline 3px;
+      }
+      .meeting-caradd{
+        width: 15vw;
+        height: 16vw;
+        padding-top: 2vh;
+        
+        /* border-left: 4px solid #000000; */
+        /* border: 1px solid #333; */
+        border-top: 0.5px outset lightgrey;
+        border-right: 0.5px solid lightgrey ;
+        box-shadow: 0px 3px 6px -3px #000000;
+        padding-top: 0px;
+        margin: 0 auto 0 auto;
+        background-color:  white;
+        display: inline-block;
+      }
+      .co-meetings{
+        width: 60vw;
+      height: 80vh;
+      /* border-left: 4px solid #000000; */
+      /* border: 1px solid #333; */
+      border-top: 0.5px outset lightgrey;
+      border-right: 0.5px solid lightgrey ;
+      box-shadow: 0px 3px 6px -3px #000000;
+      border-radius: 2%;
+      display: block;
+      margin: 0 auto 0 auto;
+      background-color:  #FFC300;
+      
+      }
+      .center-text{
+        padding-top: 40%;
+      }
+      .add-co-meetings{
+        width: 50vw;
+      height: auto;
+      /* border-left: 4px solid #000000; */
+      /* border: 1px solid #333; */
+      border-top: 0.5px outset lightgrey;
+      border-right: 0.5px solid lightgrey ;
+      box-shadow: 0px 3px 6px -3px #000000;
+      border-radius: 2%;
+      display: block;
+      margin: 0 auto 0 auto;
+      background-color:  #FFC300;
+      
+      }
+      .meeting-div{
+        width: 50vw;
+        display: grid;
+        grid-template-columns: 47% 47%;
+        gap: 1rem;
+        padding: 6vw;
+        
+      }
+      .add-co-meetings{
+        width: 60vw;
+      height: auto;
+      /* border-left: 4px solid #000000; */
+      /* border: 1px solid #333; */
+      border-top: 0.5px outset lightgrey;
+      border-right: 0.5px solid lightgrey ;
+      box-shadow: 0px 3px 6px -3px #000000;
+      border-radius: 2%;
+      display: block;
+      margin: 0 auto 0 auto;
+      background-color:  #FFC300;
+      
+      }
+      .add-meetings{
+        
+        width: 17vw;
+        height: 28vh;
+        background-color:  white;
+        border-top: 0.5px outset lightgrey;
+        border-right: 0.5px solid lightgrey ;
+        box-shadow: 0px 3px 6px -3px #000000;    
+        color:#FFC300;
+        border-radius: 15%;
+        align-items: center;
+        
+        
+      }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px)  {
+  .center-text{
+    padding-top: 45%;
+  }
+  .task{
+    
+    padding-left: 21vw;
+    padding-bottom: 10px ;
+    color: #FFC300;
+    font-size: 130%;
+    font-weight: bold;
+  }
+  .tasks-card{
+    
+    width: 50%;
+      height: 90px;
+      /* border-left: 4px solid #000000; */
+      /* border: 1px solid #333; */
+      border-top: 0.5px outset lightgrey;
+      border-right: 0.5px solid lightgrey ;
+      box-shadow: 0px 3px 6px -3px #000000;
+      border-radius: 2%;
+      
+      margin: 0 auto 0 auto;
+      background-color:  #FFC300;
+    }
+
+    .tasks-headline{
+        color: white;
+        
+        float: left;
+        padding-left: 2%;
+        padding-top: 1%;
+        padding-right: 10%;
+        padding-bottom: 1%;
+        
+        font-weight: bold;
+        font-size: 110%;
+      }
+      .tasks-name{
+        color:white;
+        float: right;
+        padding-left: 60%;
+        padding-right:2%;
+        display: block;
+        font-size: 90%;
+        font-weight: bold;
+      }
+      .tasks-time{
+         color: white;
+          float: right;
+          padding-left: 70%;
+          padding-right: 2%;
+          padding-top:2%;
+          display: block;
+          font-size: 90%;
+          font-weight: bold;
+      }
+      .single-time{
+        display: block;
+        float: right;
+        padding-right: 3%;
+        color:white;
+        font-size: 100%;
+        font-weight: bold;
+      }
+      .task-title{
+       display: block;
+       padding-left: 2%;
+       padding-top: 2%;
+       color: white;
+       font-size: 110%;
+       font-weight: bold;
+      }
+      .taskk-name{
+        display: block;
+        float: right;
+        padding-right: 3%;
+        color:white;
+        font-size: 100%;
+        font-weight: bold;
+      }
+      .task-content{
+       color: white;
+       display: block;
+       padding-left: 2%;
+       padding-right: 2%;   
+       font-size: 100%;    
+}
+.single-task{
+  width: 60vw;
+height: 70vh;
+/* border-left: 4px solid #000000; */
+/* border: 1px solid #333; */
+border-top: 0.5px outset lightgrey;
+border-right: 0.5px solid lightgrey ;
+box-shadow: 0px 3px 6px -3px #000000;
+border-radius: 2%;
+display: block;
+margin: 0 auto 0 auto;
+background-color:  #FFC300;
+
+}
+.button-task {
+margin-left: 40%;
+  background-color: white; 
+  border: none;
+  color: #FFC300;
+  padding: 1.7%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 0px;
+  cursor: pointer;
+}
+.button6 {border-radius: 1%;
+}
+.task-icons{
+  justify-content: center;
+}
+.single-time{
+  
+  padding-left: 50vw;
+  padding-top:3%;
+  padding-right: 3%;
+  padding-bottom:2%;
+  color:white;
+  font-size: 100%;
+  font-weight: bold;
+}
+.task-title{
+ display: block;
+ padding-left: 2%;
+ padding-top: 2%;
+ padding-bottom: 4%;
+ color: white;
+ font-size: 110%;
+ font-weight: bold;
+}
+.taskk-name{
+  
+  padding-left: 40vw;
+  padding-top:5%;
+  padding-right: 3%;
+  display:block;
+  color:white;
+  font-size: 100%;
+  font-weight: bold;
+}
+.task-content{
+ color: white;
+ display: block;
+ padding-left: 2%;
+ padding-right: 2%;   
+ font-size: 100%;
+  
+}
+.task-icons{
+  
+  text-align: center;
+}
+.space-div{
+  padding-top: 10vh;
+  display: block;
+  /* position: absolute; 
+  bottom: 0; */
+}
+.but-div{
+  padding-top: 0.6%;
+  text-align: center;
+}
+.add-meetings{
+        
+  width: 23vw;
+  height: 23vh;
+  background-color:  white;
+  border-top: 0.5px outset lightgrey;
+  border-right: 0.5px solid lightgrey ;
+  box-shadow: 0px 3px 6px -3px #000000;    
+  color:#FFC300;
+  border-radius: 15%;
+  align-items: center;
+  
+  
+}
+.co-meetings{
+  width: 60vw;
+height: 70vh;
+/* border-left: 4px solid #000000; */
+/* border: 1px solid #333; */
+border-top: 0.5px outset lightgrey;
+border-right: 0.5px solid lightgrey ;
+box-shadow: 0px 3px 6px -3px #000000;
+border-radius: 2%;
+display: block;
+margin: 0 auto 0 auto;
+background-color:  #FFC300;
+
+}
+.new-meetings{
+  width: 50vw;
+  height: 60vh;
+/* border-left: 4px solid #000000; */
+/* border: 1px solid #333; */
+  border-top: 0.5px outset lightgrey;
+  border-right: 0.5px solid lightgrey ;
+  box-shadow: 0px 3px 6px -3px #000000;
+  border-radius: 2%;
+  margin: 0 auto 0 auto;
+  background-color:  #FFC300;
+
+}
+.meeting-content{
+  float: center;
+  padding-left: 20px;
+  font-size: 100%;
+}
+.meeting-details{
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 120%;
+  text-decoration: underline 3px;
+}
+.meeting-caradd{
+  width: 45vw;
+  height: 35vw;
+  padding-top: 10vh;
+  
+  /* border-left: 4px solid #000000; */
+  /* border: 1px solid #333; */
+  border-top: 0.5px outset lightgrey;
+  border-right: 0.5px solid lightgrey ;
+  box-shadow: 0px 3px 6px -3px #000000;
+  padding-top: 0px;
+  margin: 0 auto 0 auto;
+  background-color:  white;
+   
+}
+.meeting-div{
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 47% 47%;
+  gap: 1rem;
+  padding: 6vw;
+  
+}
+.add-co-meetings{
+  width: 60vw;
+height: auto;
+/* border-left: 4px solid #000000; */
+/* border: 1px solid #333; */
+border-top: 0.5px outset lightgrey;
+border-right: 0.5px solid lightgrey ;
+box-shadow: 0px 3px 6px -3px #000000;
+border-radius: 2%;
+display: block;
+margin: 0 auto 0 auto;
+background-color:  #FFC300;
+
+}
+
+ 
+}
+
+
+
+@media (max-width: 600px) { /* less than or euqal to */
+
+  .center-text{
+    padding-top: 33%;
+  }
+  body {
+    padding-top: 0%;
+   }
+  .task{
+    
+    padding-left: 43vw;
+    padding-bottom: 10px ;
+    color: #FFC300;
+    font-size: 130%;
+    font-weight: bold;
+  }
+.tasks-card{
+    
+    width: 67%;
+      height: 75px;
+      /* border-left: 4px solid #000000; */
+      /* border: 1px solid #333; */
+      border-top: 0.5px outset lightgrey;
+      border-right: 0.5px solid lightgrey ;
+      box-shadow: 0px 3px 6px -3px #000000;
+      border-radius: 5%;
+      margin: 0 auto 0 auto;
+      background-color:  #FFC300;
+    }
+
+    .tasks-headline{
+        color: white;
+        
+        padding-left: 6%;
+        
+        padding-bottom: 1.5%;
+        display: block;
+        font-weight: bold;
+      }
+      .tasks-name{
+        color:white;
+        padding-left: 50%;
+        padding-top: 1%;
+        padding-right:2%;
+        display: block;
+        font-size: 80%;
+        font-weight: bold;
+        float: right;
+      }
+      .tasks-time{
+          color: white;
+          float:right;
+          padding-left: 65%;
+          padding-right: 2%;
+          padding-top:4%;
+          padding-bottom: 1%;
+          display: block;
+          font-size: 80%;
+          font-weight: bold;
+      }
+      .single-task{
+        width: 90%;
+      height: 80vh;
+      /* border-left: 4px solid #000000; */
+      /* border: 1px solid #333; */
+      border-top: 0.5px outset lightgrey;
+      border-right: 0.5px solid lightgrey ;
+      box-shadow: 0px 3px 6px -3px #000000;
+      border-radius: 2%;
+      display: block;
+      margin: 0 auto 0 auto;
+      background-color:  #FFC300;
+      
+      }
+      .button-task {
+      margin-left: 40%;
+        background-color: white; 
+        border: none;
+        color: #FFC300;
+        padding: 1.7%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0px 0px;
+        cursor: pointer;
+      }
+      .button6 {border-radius: 1%;
+      }
+      .task-icons{
+        justify-content: center;
+      }
+      .single-time{
+        
+        padding-left: 65vw;
+        padding-top:3%;
+        padding-right: 3%;
+        padding-bottom:2%;
+        color:white;
+        font-size: 100%;
+        font-weight: bold;
+      }
+      .task-title{
+       display: block;
+       padding-left: 2%;
+       padding-top: 2%;
+       padding-bottom: 4%;
+       color: white;
+       font-size: 110%;
+       font-weight: bold;
+      }
+      .taskk-name{
+        
+        padding-left: 55vw;
+        padding-top:5%;
+        padding-right: 3%;
+        display:block;
+        color:white;
+        font-size: 100%;
+        font-weight: bold;
+      }
+      .task-content{
+       color: white;
+       display: block;
+       padding-left: 2%;
+       padding-right: 2%;   
+       font-size: 100%;
+        
+      }
+      .task-icons{
+        
+        text-align: center;
+      }
+      .space-div{
+        padding-top: 10vh;
+        display: block;
+        /* position: absolute; 
+        bottom: 0; */
+      }
+      .but-div{
+        padding-top: 0.6%;
+        text-align: center;
+      }
+      .co-meetings{
+        width: 90vw;
+         height: 50vh;
+      /* border-left: 4px solid #000000; */
+      /* border: 1px solid #333; */
+      border-top: 0.5px outset lightgrey;
+      border-right: 0.5px solid lightgrey ;
+      box-shadow: 0px 3px 6px -3px #000000;
+      border-radius: 2%;
+      margin: 0 auto 0 auto;
+      background-color:  #FFC300;
+      
+      }
+      .meeting-div{
+        width: 80vw;
+        display: grid;
+        grid-template-columns: 47% 47%;
+        gap: 1rem;
+        padding: 6vw;
+        
+      }
+      
+      
+      .add-meetings{
+        
+        width: 35vw;
+        height: 30vw;
+        background-color:  white;
+        border-top: 0.5px outset lightgrey;
+        border-right: 0.5px solid lightgrey ;
+        box-shadow: 0px 3px 6px -3px #000000;    
+        color:#FFC300;
+        border-radius: 15%;
+        align-items: center;
+        
+        
+      }
+      .add-co-meetings{
+        width: 90vw;
+      height: auto;
+      /* border-left: 4px solid #000000; */
+      /* border: 1px solid #333; */
+      border-top: 0.5px outset lightgrey;
+      border-right: 0.5px solid lightgrey ;
+      box-shadow: 0px 3px 6px -3px #000000;
+      border-radius: 2%;
+      display: block;
+      margin: 0 auto 0 auto;
+      background-color:  #FFC300;
+      
+      }
+      .center-content{
+        padding: 30%;
+
+        display: block;
+        height: 80%;
+      }
+
+      .meeting-caradd{
+        width: 45vw;
+        height: 35vw;
+        padding-top: 10vh;
+        
+        /* border-left: 4px solid #000000; */
+        /* border: 1px solid #333; */
+        border-top: 0.5px outset lightgrey;
+        border-right: 0.5px solid lightgrey ;
+        box-shadow: 0px 3px 6px -3px #000000;
+        padding-top: 0px;
+        margin: 0 auto 0 auto;
+        background-color:  white;
+         
+      }
+      .new-meetings{
+        width: 90vw;
+        height: 80vh;
+     /* border-left: 4px solid #000000; */
+     /* border: 1px solid #333; */
+        border-top: 0.5px outset lightgrey;
+        border-right: 0.5px solid lightgrey ;
+        box-shadow: 0px 3px 6px -3px #000000;
+        border-radius: 2%;
+        margin: 0 auto 0 auto;
+        background-color:  #FFC300;
+     
+      }
+      .meeting-content{
+        float: left;
+        padding-left: 20px;
+        font-size: 100%;
+      }
+      .meeting-details{
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 120%;
+        text-decoration: underline 3px;
+      }
+            
+
+}
+
+
+@media (max-width: 300px) {
+
+  .center-text{
+    padding-top: 45%;
+  }
+  .task{
+    
+    padding-left: 43vw;
+    padding-bottom: 10px ;
+    color: #FFC300;
+    font-size: 130%;
+    font-weight: bold;
+  }
+  .tasks-card{
+    
+    width: 67%;
+      height: 90px;
+      /* border-left: 4px solid #000000; */
+      /* border: 1px solid #333; */
+      border-top: 0.5px outset lightgrey;
+      border-right: 0.5px solid lightgrey ;
+      box-shadow: 0px 3px 6px -3px #000000;
+      border-radius: 5%;
+      
+      margin: 0 auto 0 auto;
+      background-color:  #FFC300;
+    }
+
+    .tasks-headline{
+        color: white;
+        padding-left: 8%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display: block;
+        font-weight: bold;
+      }
+      .tasks-name{
+        color:white;
+        padding-left: 50%;
+        padding-right:2%;
+        display: block;
+        font-size: 80%;
+        font-weight: bold;
+      }
+      .tasks-time{
+         color: white;
+          padding-left: 70%;
+          padding-right: 2%;
+          padding-top:2%;
+          display: block;
+          font-size: 80%;
+          font-weight: bold;
+      }
+      .single-task{
+        width: 90%;
+      height: 80vh;
+      /* border-left: 4px solid #000000; */
+      /* border: 1px solid #333; */
+      border-top: 0.5px outset lightgrey;
+      border-right: 0.5px solid lightgrey ;
+      box-shadow: 0px 3px 6px -3px #000000;
+      border-radius: 2%;
+      display: block;
+      margin: 0 auto 0 auto;
+      background-color:  #FFC300;
+      
+      }
+      .button-task {
+      margin-left: 40%;
+        background-color: white; 
+        border: none;
+        color: #FFC300;
+        padding: 1.7%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0px 0px;
+        cursor: pointer;
+      }
+      .button6 {border-radius: 1%;
+      }
+      .task-icons{
+        justify-content: center;
+      }
+      .single-time{
+        
+        padding-left: 65vw;
+        padding-top:3%;
+        padding-right: 3%;
+        padding-bottom:2%;
+        color:white;
+        font-size: 100%;
+        font-weight: bold;
+      }
+      .task-title{
+       display: block;
+       padding-left: 2%;
+       padding-top: 2%;
+       padding-bottom: 4%;
+       color: white;
+       font-size: 110%;
+       font-weight: bold;
+      }
+      .taskk-name{
+        
+        padding-left: 55vw;
+        padding-top:5%;
+        padding-right: 3%;
+        display:block;
+        color:white;
+        font-size: 100%;
+        font-weight: bold;
+      }
+      .task-content{
+       color: white;
+       display: block;
+       padding-left: 2%;
+       padding-right: 2%;   
+       font-size: 100%;
+        
+      }
+      .task-icons{
+        
+        text-align: center;
+      }
+      .space-div{
+        padding-top: 2vh;
+        display: block;
+        /* position: absolute; 
+        bottom: 0; */
+      }
+      .but-div{
+        padding-top: 0.6%;
+        text-align: center;
+      }
+      .new-meetings{
+        width: 90vw;
+        height: 80vh;
+     /* border-left: 4px solid #000000; */
+     /* border: 1px solid #333; */
+        border-top: 0.5px outset lightgrey;
+        border-right: 0.5px solid lightgrey ;
+        box-shadow: 0px 3px 6px -3px #000000;
+        border-radius: 2%;
+        margin: 0 auto 0 auto;
+        background-color:  #FFC300;
+     
+      }
+      .meeting-content{
+        float: center;
+        padding-left: 20px;
+        font-size: 100%;
+      }
+      .meeting-details{
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 120%;
+        text-decoration: underline 3px;
+      }
+      .meeting-caradd{
+        width: 45vw;
+        height: 35vw;
+        padding-top: 10vh;
+        
+        /* border-left: 4px solid #000000; */
+        /* border: 1px solid #333; */
+        border-top: 0.5px outset lightgrey;
+        border-right: 0.5px solid lightgrey ;
+        box-shadow: 0px 3px 6px -3px #000000;
+        padding-top: 0px;
+        margin: 0 auto 0 auto;
+        background-color:  white;
+         
+      }
+      .meeting-div{
+        width: 80vw;
+        display: grid;
+        grid-template-columns: 47% 47%;
+        gap: 1rem;
+        padding: 6vw;
+        
+      }
+
+}

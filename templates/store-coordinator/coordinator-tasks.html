@@ -1,0 +1,39 @@
+{% extends 'base-coordinator.html' %}
+
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="task">
+  TASKS
+</div>
+<a href='{{ url_for('task') }}'>
+<div class="tasks-card">
+    <div class="tasks-time">12.35pm</div>
+    <div class="tasks-headline">Update the new menu card</div>
+    <div class="tasks-name">- Zubair ahmed</div>
+</div></a>
+
+<br>
+
+
+<div class="tasks-card">
+  <div class="tasks-time">12.35pm</div>
+  <div class="tasks-headline">Update the new menu card</div>
+  <div class="tasks-name">- Zubair ahmed</div>
+</div>
+
+<!-- <div class="meeting-card">
+    <div class="meeting-center" >
+      
+      <a style="text-decoration:none; color:black"href='{{ url_for('omeetings') }}'><h4 class="online">ONLINE</h4></a>
+    </div> 
+ </div> -->
+
+
+{% endblock %}

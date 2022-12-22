@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>charcoalBay</title>
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/base.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/checklist.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/meetings.css') }}">
+   <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/sop.css') }}">
+   <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/storecoordinator.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/login.css') }}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+ 
+   <!-- <link rel="stylesheet" href="/home/zeeshan/charcoalBay/project/static/styles/base.css"> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+   
+ </head>
+ <body>
+   
+   
+   
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+   </div>
+   
+   <a style ="text-decoration:none; color:#FFC300;" href="{{ url_for('dropSession') }}"><h3 class="logout-btn">LOGOUT</h3></a>
+  
+   <div class="side-bar">
+
+     <header>
+
+
+
+     <div class="close-btn">
+
+       <i class="fas fa-times"></i>
+     </div>
+     <!-- <img src="https://lh3.googleusercontent.com/a-/AOh14Gj99VObFyE8W_h8RrcwZO_aYiIHu5AAa_XpnOym=s600-k-no-rp-mo" alt=""> -->
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1 class="profile-name">{{ login_name }}</h1>
+          <h3 class="profile">Store Coordinator</h3> 
+        </header>
+
+     <div class="menu">
+      <div class="hline">
+        </div>
+
+        <div class="item"><a href=' {{ url_for('tasks') }} '>TASKS</a></div>
+        <div class="item">
+            <a class="sub-btn">CHECKLIST</a>
+            <div class="sub-menu">
+              <a href="#" class="sub-item">DAILY</a>
+              <a href="#" class="sub-item">WEEKLY</a>
+              <a href="#" class="sub-item">MONTHLY</a>
+            </div>
+          </div>
+        
+        <div class="item"><a href=' {{ url_for('cordMeetings') }} '>MEETINGS</a></div>
+        <div class="item"><a href=' {{ url_for('cordTrainings') }} '>TRAININGS</a></div>
+        <div class="item"><a href=' {{ url_for('coordinatorPD') }} '>PRODUCT DEVELOPMENT</a></div>
+        <div class="item"><a href=' {{ url_for('coordinatorReview') }} '>REVIEWS</a></div>
+     </div>
+   </div>
+   
+    
+    {% block content %}
+
+    {% endblock %}
+    
+   
+
+   
+
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden"); //hidden
+       $('.sop-round').css("visibility","hidden");
+
+       
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+       $('.sop-round').css("visibility","visible");
+       
+     });
+   });
+
+   
+   $('.input-number-increment').click(function() {
+    var $input = $(this).parents('.input-number-group').find('.input-number');
+    var val = parseInt($input.val(), 10);
+    $input.val(val + 1);
+  });
+  
+  $('.input-number-decrement').click(function() {
+    var $input = $(this).parents('.input-number-group').find('.input-number');
+    var val = parseInt($input.val(), 10);
+    $input.val(val - 1);
+  })
+  
+  
+
+   
+
+  function myfun(){
+    
+    //alert(arguments[0] + arguments[1]);
+    checkBox = document.getElementById(arguments[0]);
+    //alert(checkBox)
+    if(checkBox.checked == true){
+      $('#'+arguments[1]).css("border-left","4px solid #72a604");
+    }
+    if(checkBox.checked != true){
+      $('#'+arguments[1]).css("border-left","4px solid rgb(207, 27, 27)");
+    }
+  }
+  
+  
+    
+  
+   </script>
+
+ </body>
+</html>

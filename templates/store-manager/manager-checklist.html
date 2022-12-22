@@ -1,0 +1,31 @@
+{% extends 'base-manager.html' %}
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<h3>Checklist</h3>
+
+<br>
+<br>
+<form>
+     
+    {% for i in range(mancheck|length) %}
+    <div class="card" id="check{{ i+1 }}">
+      <input type="checkbox" id="c{{ i+1 }}" name="fruit-1" value="c{{ i+1 }}" onclick="myfun('c{{ i+1 }}','check{{ i+1 }}')">
+      <label for="c{{ i+1 }}" class="checklist-label" ><strong>{{ mancheck[i]  }}</strong></label>
+    </div>
+    <div style="height: 3px;" ></div>
+    {% endfor %}
+    
+  <br>
+  <br>
+  <center>
+  <button class="button button5 "> Submit Checklist </button>
+  </center>
+
+  </form>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base-coordinator.html' %}
+
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="new-meetings">
+   <br>
+   <br>
+   <h5 class="meeting-details">MEETING DETAILS</h5>
+   <div class="meeting-content">
+    <br>
+    
+     <p>Meeting agenda: {{ m_agenda }}</p>
+     <p>Meeting Host: {{ m_host  }}</p>
+     <p>Time: {{ m_time }}</p>
+     <p>Date: {{ m_date }}</p>
+     <p>Venue: {{ m_link }}</p>
+     <p>Audience: {{ m_aud }} 
+   </div>
+</div>
+
+<div style="height:20px;"> 
+</div>
+
+
+{% endblock %}

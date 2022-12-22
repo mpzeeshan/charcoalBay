@@ -8,13 +8,15 @@
 <br>
 <h3>Online Trainings</h3>
 
-{% for i in range(m_agenda|length) %}
+{% for i in range(t_name|length) %}
 <div class="meeting-card-online">
- <p style="display:inline ;">Meeting Agenda: </p><p style="display:inline ; color: #887005">Training  </p><br> <br>
- <p style="display:inline ;">Meeting Host: </p><p style="display:inline ; color: #887005">{{ m_host[i] }} </p> <br><br>
- <p style="display:inline ;">Time: </p> <p style="display:inline ; color: #887005"> {{ m_time[i] }}</p><br><br>
- <p style="display:inline ;">Date: </p> <p style="display:inline ; color: #887005"> {{ m_date[i] }} </p><br><br>
- <p style="color: grey;">Click <a href="#">here</a> to join meeting</p>
+ 
+ <p style="display:inline ;">Training: </p><p style="display:inline ; color: #887005">{{ t_name[i] }} </p> <br><br>
+ <p style="display:inline ;">Trainer: </p><p style="display:inline ; color: #887005">{{ t_trainer[i] }} </p> <br><br>
+ <p style="display:inline ;">Time: </p> <p style="display:inline ; color: #887005"> {{ t_time[i] }}</p><br><br>
+ <p style="display:inline ;">Date: </p> <p style="display:inline ; color: #887005"> {{ t_date[i] }} </p><br><br>
+ <p style="display:inline ;">Venue: </p> <p style="display:inline ; color: #887005"> {{ t_venue[i] }} </p><br><br>
+ <!-- <p style="color: grey;">Click <a href="#">here</a> to join meeting</p> -->
 </div>
 <br>
 {% endfor %}

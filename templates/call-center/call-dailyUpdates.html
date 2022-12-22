@@ -1,0 +1,57 @@
+{% extends 'base-callcenter.html' %}
+
+
+{% block content %}
+
+<br>
+<br>
+<br>
+<br>
+<h3><b>Daily Updates</b></h3>
+<br>
+<br>
+<center>
+    <div style="height:400px; width:70%; ">
+    <form method="POST" action='{{ url_for('callDailyUpdates') }}'> 
+        
+      
+        
+        <label for="ncalls">No.of calls received Daily to each outlet   </label><br>
+        <input type="text" placeholder="0" name="ncalls" required>
+        <br>
+        <br>
+        <label for="norders">No.of orders placed to each outlet on a daily basis</label><br>
+        <input type="text" placeholder="0" name="norders" required>
+        <br>
+        <br>
+        <label for="complaints">how many complaints registered from each outlet daily.</label><br>
+        <input type="text" placeholder="Complaints" name="complaints" required>
+        <br>
+        <br>
+        <label for="oreviews">Monitor online reviews of each outlets daily.</label><br>
+        <input type="text" placeholder="Done" name="oreviews" required>
+        <br><br>
+        <label for="participation">Participation of call centre staff in monthly meeting and training</label><br>
+        <input type="text" placeholder="Done" name="participation" required>
+         
+        <br><br>
+        <label for="response">  Response to online reviews daily.</label><br>
+        <input type="text" placeholder="Done" name="responce" required><br><br>
+        <label for="reviewsuggestions">Customer reviews, suggestions and complaints from each outlet with details.</label><br>
+        <textarea type="text" placeholder="Customer reviews, suggestions" name="reviewsuggestions" required> </textarea>
+       
+        <!-- <button type="submit" >Login</button> -->
+       
+          <br>
+          <br>
+          
+          <button class="button-task button5">Submit</button>
+         
+      
+      
+    </form>
+    <div>
+</center>
+
+
+{% endblock %}

@@ -8,8 +8,8 @@
 <br>
 <h3>Product Development</h3>
 <h4>Write down your Ideas!<h4>
-    <form style="text-align: center;">
-        <textarea placeholder="Write here...">
+    <form style="text-align: center;" action='{{ url_for('submitstaffPD',  user = user, name = login_name, outlet = outlet, role = login_category ) }}' method="POST">
+        <textarea placeholder="Write here..." name="pd">
             </textarea>
      <br>
      <br>

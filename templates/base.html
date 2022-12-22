@@ -8,9 +8,11 @@
    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/checklist.css') }}">
    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/meetings.css') }}">
    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/sop.css') }}">
+   
    <!-- <link rel="stylesheet" href="/home/zeeshan/charcoalBay/project/static/styles/base.css"> -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
    
  </head>
  <body>
@@ -21,7 +23,7 @@
       <i class="fas fa-bars"></i>
    </div>
    
-   <a style ="text-decoration:none; color:#FFC300;" href="{{ url_for('index') }}"><h3 class="logout-btn">LOGOUT</h3></a>
+   <a style ="text-decoration:none; color:#FFC300;" href="{{ url_for('dropSession') }}"><h3 class="logout-btn">LOGOUT</h3></a>
   
    <div class="side-bar">
 

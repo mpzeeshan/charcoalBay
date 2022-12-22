@@ -1,0 +1,29 @@
+{% extends 'base-manager.html' %}
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3>Trainings</h3>
+<br>
+{% for i in range(t_name|length) %}
+<div class="meeting-card-online">
+ <p style="display:inline ;"> Training name: </p><p style="display:inline ; color: #887005">{{ t_name[i] }} </p><br> <br>
+ <p style="display:inline ;">Trainer: </p><p style="display:inline ; color: #887005">{{ t_host[i] }} </p> <br><br>
+ <p style="display:inline ;">Time: </p> <p style="display:inline ; color: #887005"> {{ t_time[i] }}</p><br><br>
+ <p style="display:inline ;">Date: </p> <p style="display:inline ; color: #887005"> {{ t_date[i] }} </p><br><br>
+ <p style="display:inline ;">Venue: </p> <p style="display:inline ; color: #887005"> {{ t_link[i] }} </p><br>
+ <!-- <p style="color: grey;">Click <a href="#">here</a> to join meeting</p> -->
+</div>
+<br>
+{% endfor %}
+
+<div style="height:20px;"> 
+</div>
+
+
+
+{% endblock %}
